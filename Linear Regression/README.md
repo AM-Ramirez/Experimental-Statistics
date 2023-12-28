@@ -45,4 +45,4 @@ Traditional linear regression explained above minimizes the sum of the squared r
 
 
 # Data
-I have included the data following data and data description from Kaggle([https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques]). If you wish to learn more about this data click the link and try your best. 
+I have included the data following data and data description from [Kaggle](https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques). If you wish to learn more about this data click the link and try your best. 
