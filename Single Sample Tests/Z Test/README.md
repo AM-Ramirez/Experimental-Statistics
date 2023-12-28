@@ -13,8 +13,8 @@ In the case you are sampling from a normally distributed population, you may wan
 - $H_a: \mu \ne 0$ | Alternative Hypothesis (two sided)
 - $\alpha=0.05$ significance level (95% confident)
 ### One-Sided Tests
-- $H_a: \mu \gte 0$ | Alternative Hypothesis (one-sided)
-- $H_a: \mu \lte 0$ | Alternative Hypothesis (one-sided)
+- $H_a: \mu \ge 0$ | Alternative Hypothesis (one-sided)
+- $H_a: \mu \le 0$ | Alternative Hypothesis (one-sided)
 ### Process
 1. State your Null and Alternative hypotheses with significance level
 2. Calculate the test statistic (i.e. z-score=$\frac{\bar{X}-\mu}{\sigma}$)
