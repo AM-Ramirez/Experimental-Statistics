@@ -15,7 +15,7 @@ In this folder you will see how to easily create a linear regression model in R.
 - **Observational:** For any population of the groups with similar average Xs, a unit increase in X is associated with $\beta$ increase in mean Y. Causal conclusions ***cannot*** be concluded.
 ### Model Fit
 - **R Squared:** measures how well your model fits the sample data
-  - Can always be made 1 if you add more explanatory variables (i.e. adding X squared, X cubed, ..., till the number of predictors equals the sample size).
+  - Can always be made 1 if you add more explanatory variables (i.e. adding $X^2$, $X^3$, ..., till the number of predictors equals the sample size).
 - **Root Mean Squred Error (RMSE):** evaluates model's predictive strength or how close the predicted values are to the real values. 
 ## Linear Model Assumptions
 - **Linearity:** use scatter plots to show how your variables are visually trended (a linear trend should be expected: upwards, downwards or flat).
