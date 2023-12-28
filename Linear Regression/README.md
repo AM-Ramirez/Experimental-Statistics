@@ -1,4 +1,4 @@
-# Linear Regression Example
+# Linear Regression
 In this folder you will see how to easily create a linear regression model in R. When creating a linear model, it is important to note the assumptions and transformations to ensure you model operates as planned. 
 ## Overview
 ### Variables
@@ -45,4 +45,4 @@ Traditional linear regression explained above minimizes the sum of the squared r
 
 
 # Data
-I have included the data following data and data description from Kaggle[https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques]. If you wish to learn more about this data click the link and try your best. 
+I have included the data following data and data description from Kaggle([https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques]). If you wish to learn more about this data click the link and try your best. 
