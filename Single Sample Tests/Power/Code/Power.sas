@@ -7,38 +7,37 @@
 *# +-------------------------------------------------------------------------------------------------------------------+;
 
 
-*Rank Sum Example;
+***********************;
+**Proc Power Examples**;
+***********************;
 
-data example;
-input reason $ rate;
-datalines;                                                                                                                                                                                                                   
-N 18.8
-N 20.0
-N 20.1
-N 20.9
-N 20.9
-N 21.4
-T 22.0
-N 22.7
-N 22.9
-T 23.0
-T 24.5
-T 25.8
-T 30.0
-T 37.6
-T 38.5
-;
-run;  
+**One sample problems;
 
-proc npar1way data=example wilcoxon;
-class reason;
-var rate;
-exact HL wilcoxon;
-run;
+**Calculate power for a given effect size (mean), n, and assumed std. dev.;
+proc power; 
+onesamplemeans 
+mean = 8 
+ntotal = 150 
+stddev = 40 
+power = .; 
+run; 
 
-* 90% HL interval;
-proc npar1way data=example wilcoxon alpha=.1;
-class reason;
-var rate;
-exact HL wilcoxon;
-run;
+**Calculate sample size needed to obtain 80% power for a given effect size (mean) and assumed std. dev.;
+proc power; 
+onesamplemeans 
+mean = 8 
+ntotal = . 
+stddev = 40 
+power = 0.8; 
+run; 
+
+**Generate a power curve that shows power for two different effect sizes and two different standard deviations;
+**The power curve is calculate for a specified range of sample sizes;
+proc power; 
+onesamplemeans 
+mean = 5 10 
+ntotal = 150 
+stddev = 30 50 
+power = .; 
+plot x=n min=100 max=200; 
+run; 
