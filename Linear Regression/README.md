@@ -2,12 +2,12 @@
 In this folder you will see how to easily create a linear regression model in R. When creating a linear model, it is important to note the assumptions and transformations to ensure you model operates as planned. 
 ## Overview
 ### Variables
-- Y is called the dependent or response variable.
-- X is caled the independent, regressor, or predictor variable.
-- Error should be random and sometimes called noise, where we should expect it's average to be zero with a constant variance.
-- Residuals are the actual Ys - Predicted Values.
-- Beta are the coefficients in your model.
-- Interaction Terms: one predictor variable impact on another predcitor variable is related to the dependent variable. Said another way, the slope of one predicotr changes based on the value of another predictor varialble.
+- **Y** is called the dependent or response variable.
+- **X** is caled the independent, regressor, or predictor variable.
+- **Error** should be random and sometimes called noise, where we should expect it's average to be zero with a constant variance.
+- **Residuals** are the actual Ys - Predicted Values.
+- **Beta** are the coefficients in your model.
+- **Interaction Terms:** one predictor variable impact on another predcitor variable is related to the dependent variable. Said another way, the slope of one predicotr changes based on the value of another predictor varialble.
   - Run an Extra Sum of Squares test (ESS test) to see if the interaction term is reasonalbe. This is done simply by fitting two models (one with and one without) and running an ANOVA test to see if it is statistically significant. 
 ### Random vs. Observational Experiments
 - **Random Sampled Data:** We can generalize to the population of interest as sample was randomly collected. For these examples, we will assume a random sample was conducted.
