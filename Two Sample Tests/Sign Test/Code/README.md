@@ -2,6 +2,7 @@
 This is a non-parametric alternative to the Paire T-Test (where we are evaluating deviation in medians across subjects sampled twice). 
 
 **Assumptions:** subjects are independent and come from a random sample within a fixed population.
+
 **Hypothesis:** 
 - $H_0: Y_1-Y_2=0$ where $Y_i,i={1,2}$ are independent.
 - $H_a: Y_1-Y_2\ne0$ two sided test
@@ -13,3 +14,8 @@ If your sample is small enough (or have enough computing power and patience), th
 - $n=$ # of unique subjects
 - $E[Y_1-Y_2]=n(0.5)$
 
+### Process
+1. Calculate the differences between $Y_1-Y_2=Z$
+2. Count the number of positive differences $d_p$
+3. Depending on the hypothesis, you will need to calculate the probability of $d_p$ or more extreme
+  - In the Two Sided Case you will need to capture the symetric probabilities, so you can use $2\times P(Z\ge d_p)$ and reject if it is less than $\alpha$ 
