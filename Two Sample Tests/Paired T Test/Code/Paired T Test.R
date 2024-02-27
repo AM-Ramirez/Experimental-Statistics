@@ -22,17 +22,7 @@
 # Variance of the difference should be smaller due to covariance if it is positively correlated
 # H0: difference = 0
 # Ha: difference != 0
-
-
-
-# $Var(Y_{before}-Y_{after})=\sigma_{before}^2+\sigma_{after}^2-2Cov(Y_{before},Y_{after})$
-#   
-#   Should result in a smaller variance due to the covariance if positively correlated
-# 
-# $H_0:\mu_{fatigued-not\space fatigued}=0\text{, }H_a: \mu_{fatigued-not\space fatigued}\ne0$
-#   
-# Test Statistic: $T=\frac{\bar{d}}{SE(\bar{d})}\text{, where }\bar{d}=\frac{d_1+\dots+d_n}{n}\text{ and }SE(\bar{d})=\frac{s_d}{\sqrt{n}}\text{ and n=# of unique observations i.e. one group}$
-
+# alpha = 0.05
 
 side_effect <- read.csv("C:/Users/Alex Ramirez/Desktop/Github Projects/Experimental Statistics/Experimental-Statistics/Two Sample Tests/Paired T Test/Data/side_effect.csv")
 side_effect
