@@ -18,4 +18,15 @@ If your sample is small enough (or have enough computing power and patience), th
 1. Calculate the differences between $Y_1-Y_2=Z$
 2. Count the number of positive differences $d_p$
 3. Depending on the hypothesis, you will need to calculate the probability of $d_p$ or more extreme
-  - In the Two Sided Case you will need to capture the symetric probabilities, so you can use $2\times P(Z\ge d_p)$ and reject if it is less than $\alpha$ 
+  - In the Two Sided Case you will need to capture the symetric probabilities, so you can use $2\times P(Z\ge d_p)$ and reject if it is less than $\alpha$
+    - Binomial Probability Function: $\sum\limits_{i=d_p}^{n}{n \choose i}(0.5)^i(1-0.5)^{n-i}$
+  - For the one sided case, make sure you use the direction accordingly
+
+## Normalization Method
+- **Test Statistic:** $Z_{score}=\frac{k-n/2-0.5}{\sqrt{n/4}}$
+- Calculate the probability of Z according to the normal probability distribution and make sure to account for the continuity correction direction if one-side test
+  - Less than $+0.5$
+  - Greater than $-0.5$
+
+ 
+
